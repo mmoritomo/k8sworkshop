@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dogs-service
+spec:
+  type: ClusterIP
+  selector:
+    app: dogs
+  ports:
+  - port: 80
+    targetPort: 5000
+
